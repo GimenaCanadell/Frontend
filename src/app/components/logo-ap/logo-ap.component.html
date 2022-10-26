@@ -9,7 +9,10 @@
             <a href="https://github.com/GimenaCanadell"><img src="../../../assets/github.png"id ="github"></a>
             <a href="https://www.instagram.com/gimecanadell/?hl=es"><img src="../../../assets/instagram.png"id ="instagram"></a>
             <a href="https://www.linkedin.com/feed/?trk=sign-pg"><img src="../../../assets/linkedin.png"id ="linkedin"></a>
-            <button type="button"class="btn btn-outline-light"(click)="login()">inicio</button>
+            <button type="button"class="btn btn-outline-light"(click)="login()"*ngIf="!isLogged">Ingreso</button>
+            <button type="button"class="btn btn-outline-light"(click)="onLogOut()"*ngIf="isLogged">Cerrar sesion</button>
         </div>
        </div>
-    </div>
+       </div>
+
+
